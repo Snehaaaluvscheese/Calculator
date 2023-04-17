@@ -30,23 +30,29 @@ function operate(firstNum, operator, secondNum) {
     }
 }
 
-const inputBox = document.querySelector('#display');
+const body = document.querySelector('#body');
+
+const biggie = document.createElement('div');
+biggie.setAttribute('id', 'bigContainer');
+body.appendChild(biggie);
 
 const calcBox1 = document.querySelector('#container1');
+biggie.body.appendChild(calcBox1);
+
 const button7 = document.querySelector('#button7');
-calcBox.appendChild(button7);
+calcBox1.appendChild(button7);
 
 const button8 = document.querySelector('#button8');
-calcBox.appendChild(button8);
+calcBox1.appendChild(button8);
 
 const button9 = document.querySelector('#button9');
-calcBox.appendChild(button9);
+calcBox1.appendChild(button9);
 
 const division = document.querySelector('#divide');
-calcBox.appendChild(division);
+calcBox1.appendChild(division);
 
 const clear = document.querySelector('#clear');
-calcBox.appendChild(clear);
+calcBox1.appendChild(clear);
 
 const button4 = document.querySelector('#button4');
 
@@ -55,6 +61,8 @@ const button5 = document.querySelector('#button5');
 
 
 const calcBox2 = document.querySelector('#container2');
+
+biggie.appendChild(calcBox2);
 
 
 const button6 = document.querySelector('#button6');
@@ -67,6 +75,7 @@ calcBox2.appendChild(button6);
 calcBox2.appendChild(multiplication);
 
 const calcBox3 = document.querySelector('#container3');
+biggie.appendChild(calcBox3);
 
 const button1 = document.querySelector('#button1');
 
@@ -86,6 +95,8 @@ calcBox3.appendChild(subtraction);
 
 const calcBox4 = document.querySelector('#container4');
 
+biggie.appendChild(calcBox4);
+
 const zero = document.querySelector('#zero');
 calcBox4.appendChild(zero);
 
@@ -97,3 +108,14 @@ calcBox4.appendChild(addition);
 
 const equal = document.querySelector('#equals');
 calcBox4.appendChild(equal);
+
+const inputBox = document.querySelector('#display');
+
+
+biggie.appendChild(inputBox);
+
+
+
+button7.addEventListener('onclick', () => {
+  document.getElementById("display").innerText = '7';
+});
