@@ -200,6 +200,43 @@ const calcBox = document.querySelector('#container');
      });
      // add event listener to button 6 that puts 6 in display
 
+     const multiplication = document.createElement('button');
+     // created ninth button 'multiplication' of calculator
+
+     multiplication.textContent = '*';
+     // added text content to multiplication
+
+     multiplication.setAttribute('id', 'multiplication');
+     // added id to multiplication
+
+     calcBox.appendChild(multiplication);
+     // append childNode multiplication to calculator container parentNode
+
+     multiplication.addEventListener('click', () => {
+        document.getElementById("display").innerHTML = document.getElementById("display").innerHTML + "*";
+        displayValue = "*";
+     });
+     // add event listener to multiplication that puts * in display
+
+     const button1 = document.createElement('button');
+     // created tenth button '1' of calculator
+
+     button1.textContent = '1';
+     // added text content to button1
+
+     button1.setAttribute('id', 'button1');
+     // added id to button1
+
+     calcBox.appendChild(button1);
+     // append childNode button 1 to calculator container parentNode
+
+     button1.addEventListener('click', () => {
+        document.getElementById("display").innerHTML = document.getElementById("display").innerHTML + "1";
+        displayValue = "1";
+     });
+     // add event listener to button 1 that puts 1 in display
+
+
 
      
 
