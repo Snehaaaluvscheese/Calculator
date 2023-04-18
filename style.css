@@ -1,1 +1,19 @@
+#container {
+    display: grid;
+    width: 600px;
+    height: 900px;
+    box-sizing: border-box;
+    background-color: lightpink;
+    border: 5px darkmagenta solid;
+   
+  }
 
+  /* styled calculator container box */
+
+  #display {
+    background-color:beige;
+    height: 200px;
+    border-bottom: 5px solid darkmagenta;
+  }  
+
+  /* styled display box within calculator container box */

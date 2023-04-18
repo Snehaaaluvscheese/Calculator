@@ -38,4 +38,14 @@ function operate(firstNum, operator, secondNum) {
 // function that takes an operator and 2 numbers
 // and then calls one of the above functions on the numbers.
 
+const calcBox = document.querySelector('#container');
+ // variable that selects calculator container box
+
+ const displayBox = document.querySelector('#display');
+ // variable that selects display numbers box 
+
+ calcBox.appendChild(displayBox);
+ // append childNode of display box to container paretNode
+
+
 
