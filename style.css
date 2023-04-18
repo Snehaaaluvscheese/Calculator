@@ -10,6 +10,12 @@
 
   /* styled calculator container box */
 
+  html {
+    background-color: lavender;
+  }
+
+  /* changed background colour of webpage */
+
    #display {
     background-color:beige;
     height: 200px;

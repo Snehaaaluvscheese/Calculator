@@ -62,14 +62,8 @@ const calcBox = document.querySelector('#container');
     let displayValue;
     // variable to store display value
 
-    function addNum7() {
-        document.getElementById("display").innerHTML = document.getElementById("display").innerHTML + "7";
-    }
-    // function to input num 7 
-      
-
     button7.addEventListener('click', () => {
-      addNum7();
+      document.getElementById("display").innerHTML = document.getElementById("display").innerHTML + "7";
       displayValue = "7";
     });
     // add event listener to button 7 that puts 7 in display
@@ -337,6 +331,31 @@ const calcBox = document.querySelector('#container');
         
      });
      // add event listener to equals 
+
+     // Pseudocode for making calculator work (also remember to watch 
+     // chrome devtools debugger tutorial video before starting) :-
+
+     // 1) When user presses an operator, store what is before it
+     // i.e. the first number in the firstNum variable. (firstNum = whatever the 
+     // displayValue before the operator being pressed is)
+     // ...Possible idea on how to do it: use if statement like "if (a button
+     // from any of these 4 operator buttons (+, -, *, /) is pressed), 
+     // firstNum = whatever is the displayValue before it.
+
+     // 2) Whatever operator is pressed, save/store what it is in
+     // the operator variable.
+
+     // 3) When user pressed "="/equals key, call operate()
+     // function using the user's input of firstNum and secondNum.
+
+     // 4) When operate() function has been called, update
+     // display box of calculator with solution to the operation.
+
+     // Fix to the gotchas:
+     // 1) When another operator button is pressed (+, -, *, /)
+     // the operate() function goes off for the previous two numbers 
+     // and the resulting number is used as firstNum for the second operation
+     // 
 
 
 
