@@ -1,7 +1,7 @@
 #container {
     
     width: 600px;
-    height: 900px;
+    height: 614px;
     box-sizing: border-box;
     background-color:mediumvioletred;
     border: 5px dashed lightcoral;
@@ -65,7 +65,7 @@
     width: 2.5cm;
     height: 2.5cm;
     box-sizing: border-box;
-    background-color: lightpink;
+    background-color:plum;
     margin-left: 5px;
     font-size: 50px;
     border: 5px solid darkmagenta;
@@ -78,7 +78,7 @@
     width: 5.08cm;
     height: 2.5cm;
     box-sizing: border-box;
-    background-color: lightpink;
+    background-color: plum;
     margin-left: 5px;
     font-size: 50px;
     border: 5px solid darkmagenta;
@@ -143,7 +143,7 @@
     width: 2.5cm;
     height: 2.5cm;
     box-sizing: border-box;
-    background-color: lightpink;
+    background-color: plum;
     font-size: 50px;
     border: 5px solid darkmagenta;
     margin-bottom: 900px;
@@ -207,7 +207,7 @@
     width: 2.5cm;
     height: 2.5cm;
     box-sizing: border-box;
-    background-color: lightpink;
+    background-color: plum;
     font-size: 50px;
     border: 5px solid darkmagenta;
     margin-bottom: 900px;
@@ -239,7 +239,7 @@
     width: 2.5cm;
     height: 2.5cm;
     box-sizing: border-box;
-    background-color: lightpink;
+    background-color: plum;
     font-size: 50px;
     border: 5px solid darkmagenta;
     margin-bottom: 900px;
@@ -255,7 +255,7 @@
     width: 2.5cm;
     height: 2.5cm;
     box-sizing: border-box;
-    background-color: lightpink;
+    background-color: plum;
     font-size: 50px;
     border: 5px solid darkmagenta;
     margin-bottom: 900px;
