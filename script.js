@@ -41,11 +41,38 @@ function operate(firstNum, operator, secondNum) {
 const calcBox = document.querySelector('#container');
  // variable that selects calculator container box
 
- const displayBox = document.querySelector('#display');
- // variable that selects display numbers box 
+  const displayBox = document.querySelector('#display');
+  // variable that selects display numbers box 
 
- calcBox.appendChild(displayBox);
- // append childNode of display box to container paretNode
+  calcBox.appendChild(displayBox);
+  // append childNode of display box to container paretNode
+
+    const button7 = document.createElement('button');
+    // created first button '7' of calculator
+
+    button7.textContent = '7';
+    // added text content to button7
+
+    button7.setAttribute('id', 'button7');
+    // added id to button7
+
+    calcBox.appendChild(button7);
+    // append childNode button 7 to calculator container parentNode
+
+    function addNum7() {
+        document.getElementById("display").innerHTML = document.getElementById("display").innerHTML + "7";
+        
+      }
+
+      // function to input num 7 
+      
+
+    button7.addEventListener('click', () => {
+      addNum7();
+      
+    });
+
+    // add event listener to button 7
 
 
 
