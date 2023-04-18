@@ -164,6 +164,43 @@ const calcBox = document.querySelector('#container');
      });
      // add event listener to button 4 that puts 4 in display
 
+     const button5 = document.createElement('button');
+     // created seventh button '5' of calculator
+
+     button5.textContent = '5';
+     // added text content to button5
+
+     button5.setAttribute('id', 'button5');
+     // added id to button5
+
+     calcBox.appendChild(button5);
+     // append childNode button 5 to calculator container parentNode
+
+     button5.addEventListener('click', () => {
+        document.getElementById("display").innerHTML = document.getElementById("display").innerHTML + "5";
+        displayValue = "5";
+     });
+     // add event listener to button 5 that puts 5 in display
+
+     const button6 = document.createElement('button');
+     // created eighth button '6' of calculator
+
+     button6.textContent = '6';
+     // added text content to button6
+
+     button6.setAttribute('id', 'button6');
+     // added id to button6
+
+     calcBox.appendChild(button6);
+     // append childNode button 6 to calculator container parentNode
+
+     button6.addEventListener('click', () => {
+        document.getElementById("display").innerHTML = document.getElementById("display").innerHTML + "6";
+        displayValue = "6";
+     });
+     // add event listener to button 6 that puts 6 in display
+
+
      
 
 
