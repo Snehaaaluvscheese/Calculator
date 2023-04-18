@@ -263,3 +263,15 @@
 
    /* styled equals (button = ) */
 
+   .h1 {
+    color: lightpink;
+    font-style:italic;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-weight:bolder;
+    background-color: darkviolet;
+    width: 7.25cm;
+    border-radius: 10px;
+   }
+
+   /* styled heading 1 called Calculator */
+
