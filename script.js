@@ -290,6 +290,24 @@ const calcBox = document.querySelector('#container');
      });
      // add event listener to subtraction that puts - in display
 
+     const button0 = document.createElement('button');
+     // created fourtheenth button '0' of calculator
+
+     button0.textContent = '0';
+     // added text content to button0
+
+     button0.setAttribute('id', 'button0');
+     // added id to button0
+
+     calcBox.appendChild(button0);
+     // append childNode button 0 to calculator container parentNode
+
+     button0.addEventListener('click', () => {
+        document.getElementById("display").innerHTML = document.getElementById("display").innerHTML + "0";
+        displayValue = "0";
+     });
+     // add event listener to button 0 that puts 0 in display
+
 
 
 
