@@ -59,12 +59,12 @@ const calcBox = document.querySelector('#container');
     calcBox.appendChild(button7);
     // append childNode button 7 to calculator container parentNode
 
-    let displayValue;
+    let displayValue = "";
     // variable to store display value
 
     button7.addEventListener('click', () => {
       document.getElementById("display").innerHTML = document.getElementById("display").innerHTML + "7";
-      displayValue = "7";
+      displayValue += "7";
     });
     // add event listener to button 7 that puts 7 in display
 
@@ -82,7 +82,7 @@ const calcBox = document.querySelector('#container');
 
      button8.addEventListener('click', () => {
         document.getElementById("display").innerHTML = document.getElementById("display").innerHTML + "8";
-        displayValue = "8";
+        displayValue += "8";
      });
      // add event listener to button 8 that puts 8 in display
 
@@ -100,7 +100,7 @@ const calcBox = document.querySelector('#container');
 
      button9.addEventListener('click', () => {
         document.getElementById("display").innerHTML = document.getElementById("display").innerHTML + "9";
-        displayValue = "9";
+        displayValue += "9";
      });
      // add event listener to button 9 that puts 9 in display
 
@@ -135,6 +135,7 @@ const calcBox = document.querySelector('#container');
 
      clearAll.addEventListener('click', () => {
         document.getElementById("display").innerHTML = "";
+        displayValue = "";
      });
      // add event listener to clearAll that clears display
 
@@ -152,7 +153,7 @@ const calcBox = document.querySelector('#container');
 
      button4.addEventListener('click', () => {
         document.getElementById("display").innerHTML = document.getElementById("display").innerHTML + "4";
-        displayValue = "4";
+        displayValue += "4";
      });
      // add event listener to button 4 that puts 4 in display
 
@@ -170,7 +171,7 @@ const calcBox = document.querySelector('#container');
 
      button5.addEventListener('click', () => {
         document.getElementById("display").innerHTML = document.getElementById("display").innerHTML + "5";
-        displayValue = "5";
+        displayValue += "5";
      });
      // add event listener to button 5 that puts 5 in display
 
@@ -188,7 +189,7 @@ const calcBox = document.querySelector('#container');
 
      button6.addEventListener('click', () => {
         document.getElementById("display").innerHTML = document.getElementById("display").innerHTML + "6";
-        displayValue = "6";
+        displayValue += "6";
      });
      // add event listener to button 6 that puts 6 in display
 
@@ -223,7 +224,7 @@ const calcBox = document.querySelector('#container');
 
      button1.addEventListener('click', () => {
         document.getElementById("display").innerHTML = document.getElementById("display").innerHTML + "1";
-        displayValue = "1";
+        displayValue += "1";
      });
      // add event listener to button 1 that puts 1 in display
 
@@ -241,7 +242,7 @@ const calcBox = document.querySelector('#container');
 
      button2.addEventListener('click', () => {
         document.getElementById("display").innerHTML = document.getElementById("display").innerHTML + "2";
-        displayValue = "2";
+        displayValue += "2";
      });
      // add event listener to button 2 that puts 2 in display
 
@@ -259,7 +260,7 @@ const calcBox = document.querySelector('#container');
 
      button3.addEventListener('click', () => {
         document.getElementById("display").innerHTML = document.getElementById("display").innerHTML + "3";
-        displayValue = "3";
+        displayValue += "3";
      });
      // add event listener to button 3 that puts 3 in display
 
@@ -294,7 +295,7 @@ const calcBox = document.querySelector('#container');
 
      button0.addEventListener('click', () => {
         document.getElementById("display").innerHTML = document.getElementById("display").innerHTML + "0";
-        displayValue = "0";
+        displayValue += "0";
      });
      // add event listener to button 0 that puts 0 in display
 
