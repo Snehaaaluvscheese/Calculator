@@ -308,6 +308,24 @@ const calcBox = document.querySelector('#container');
      });
      // add event listener to button 0 that puts 0 in display
 
+     const addition = document.createElement('button');
+     // created fifteenth button 'addition' of calculator
+
+     addition.textContent = '+';
+     // added text content to addition
+
+     addition.setAttribute('id', 'addition');
+     // added id to addition
+
+     calcBox.appendChild(addition);
+     // append childNode addition to calculator container parentNode
+
+     addition.addEventListener('click', () => {
+        document.getElementById("display").innerHTML = document.getElementById("display").innerHTML + "+";
+        displayValue = "+";
+     });
+     // add event listener to addition that puts + in display
+
 
 
 
