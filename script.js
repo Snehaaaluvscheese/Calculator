@@ -59,20 +59,38 @@ const calcBox = document.querySelector('#container');
     calcBox.appendChild(button7);
     // append childNode button 7 to calculator container parentNode
 
+    let displayValue;
+    // variable to store display value
+
     function addNum7() {
         document.getElementById("display").innerHTML = document.getElementById("display").innerHTML + "7";
-        
-      }
-
-      // function to input num 7 
+    }
+    // function to input num 7 
       
 
     button7.addEventListener('click', () => {
       addNum7();
-      
+      displayValue = "7";
     });
+    // add event listener to button 7 that puts 7 in display
 
-    // add event listener to button 7
+     const button8 = document.createElement('button');
+     // created second button '8' of calculator
+
+     button8.textContent = '8';
+     // added text content to button8
+
+     button8.setAttribute('id', 'button8');
+     // added id to button8
+
+     calcBox.appendChild(button8);
+     // append childNode button 8 to calculator container parentNode
+
+     button8.addEventListener('click', () => {
+        document.getElementById("display").innerHTML = document.getElementById("display").innerHTML + "8";
+        displayValue = "8";
+     });
+     // add event listener to button 8 that puts 8 in display
 
 
 
