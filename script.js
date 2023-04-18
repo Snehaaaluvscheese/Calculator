@@ -236,6 +236,61 @@ const calcBox = document.querySelector('#container');
      });
      // add event listener to button 1 that puts 1 in display
 
+     const button2 = document.createElement('button');
+     // created eleventh button '2' of calculator
+
+     button2.textContent = '2';
+     // added text content to button2
+
+     button2.setAttribute('id', 'button2');
+     // added id to button2
+
+     calcBox.appendChild(button2);
+     // append childNode button 2 to calculator container parentNode
+
+     button2.addEventListener('click', () => {
+        document.getElementById("display").innerHTML = document.getElementById("display").innerHTML + "2";
+        displayValue = "2";
+     });
+     // add event listener to button 2 that puts 2 in display
+
+     const button3 = document.createElement('button');
+     // created twelfth button '3' of calculator
+
+     button3.textContent = '3';
+     // added text content to button3
+
+     button3.setAttribute('id', 'button3');
+     // added id to button3
+
+     calcBox.appendChild(button3);
+     // append childNode button 3 to calculator container parentNode
+
+     button3.addEventListener('click', () => {
+        document.getElementById("display").innerHTML = document.getElementById("display").innerHTML + "3";
+        displayValue = "3";
+     });
+     // add event listener to button 3 that puts 3 in display
+
+     const subtraction = document.createElement('button');
+     // created thirteenth button 'subtraction' of calculator
+
+     subtraction.textContent = '-';
+     // added text content to subtraction
+
+     subtraction.setAttribute('id', 'subtraction');
+     // added id to subtraction
+
+     calcBox.appendChild(subtraction);
+     // append childNode subtraction to calculator container parentNode
+
+     subtraction.addEventListener('click', () => {
+        document.getElementById("display").innerHTML = document.getElementById("display").innerHTML + "-";
+        displayValue = "-";
+     });
+     // add event listener to subtraction that puts - in display
+
+
 
 
      
