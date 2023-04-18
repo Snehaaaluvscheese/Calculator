@@ -326,6 +326,24 @@ const calcBox = document.querySelector('#container');
      });
      // add event listener to addition that puts + in display
 
+     const equals = document.createElement('button');
+     // created sixteenth button 'equals' of calculator
+
+     equals.textContent = '=';
+     // added text content to equals
+
+     equals.setAttribute('id', 'equals');
+     // added id to equals
+
+     calcBox.appendChild(equals);
+     // append childNode equals to calculator container parentNode
+
+     equals.addEventListener('click', () => {
+        document.getElementById("display").innerHTML = document.getElementById("display").innerHTML + "=";
+        displayValue = "=";
+     });
+     // add event listener to equals that puts = in display
+
 
 
 

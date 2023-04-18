@@ -247,3 +247,19 @@
 
    /* styled addition (button + ) */
 
+   #equals {
+    position: absolute;
+    bottom: 700px;
+    top: 590px;
+    left: 212px;
+    width: 2.5cm;
+    height: 2.5cm;
+    box-sizing: border-box;
+    background-color: lightpink;
+    font-size: 50px;
+    border: 5px solid darkmagenta;
+    margin-bottom: 900px;
+   }
+
+   /* styled equals (button = ) */
+
