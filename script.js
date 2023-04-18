@@ -123,10 +123,9 @@ const calcBox = document.querySelector('#container');
      // append childNode division to calculator container parentNode
 
      division.addEventListener('click', () => {
-        document.getElementById("display").innerHTML = document.getElementById("display").innerHTML + "/";
-        displayValue = "/";
+        
      });
-     // add event listener to division that puts / in display
+     // add event listener to division 
 
      const clearAll = document.createElement('button');
      // created fifth button 'clear' of calculator
@@ -142,7 +141,6 @@ const calcBox = document.querySelector('#container');
 
      clearAll.addEventListener('click', () => {
         document.getElementById("display").innerHTML = "";
-        displayValue = "";
      });
      // add event listener to clearAll that clears display
 
@@ -213,10 +211,9 @@ const calcBox = document.querySelector('#container');
      // append childNode multiplication to calculator container parentNode
 
      multiplication.addEventListener('click', () => {
-        document.getElementById("display").innerHTML = document.getElementById("display").innerHTML + "*";
-        displayValue = "*";
+        
      });
-     // add event listener to multiplication that puts * in display
+     // add event listener to multiplication 
 
      const button1 = document.createElement('button');
      // created tenth button '1' of calculator
@@ -285,10 +282,9 @@ const calcBox = document.querySelector('#container');
      // append childNode subtraction to calculator container parentNode
 
      subtraction.addEventListener('click', () => {
-        document.getElementById("display").innerHTML = document.getElementById("display").innerHTML + "-";
-        displayValue = "-";
+        
      });
-     // add event listener to subtraction that puts - in display
+     // add event listener to subtraction 
 
      const button0 = document.createElement('button');
      // created fourtheenth button '0' of calculator
@@ -321,10 +317,9 @@ const calcBox = document.querySelector('#container');
      // append childNode addition to calculator container parentNode
 
      addition.addEventListener('click', () => {
-        document.getElementById("display").innerHTML = document.getElementById("display").innerHTML + "+";
-        displayValue = "+";
+        
      });
-     // add event listener to addition that puts + in display
+     // add event listener to addition 
 
      const equals = document.createElement('button');
      // created sixteenth button 'equals' of calculator
@@ -339,10 +334,9 @@ const calcBox = document.querySelector('#container');
      // append childNode equals to calculator container parentNode
 
      equals.addEventListener('click', () => {
-        document.getElementById("display").innerHTML = document.getElementById("display").innerHTML + "=";
-        displayValue = "=";
+        
      });
-     // add event listener to equals that puts = in display
+     // add event listener to equals 
 
 
 
